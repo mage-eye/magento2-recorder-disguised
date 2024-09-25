@@ -1,0 +1,19 @@
+{
+    "name": "mage-eye/magento2-recorder-disguised",
+    "autoload": {
+        "psr-4": {
+            "MageEye\\MagentoRecorder\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jerke Combee",
+            "email": "jerke1988@gmail.com"
+        }
+    ],
+    "require": {
+        "mage-eye/magento2-disguised-component-registrar": "dev-master",
+        "mage-eye/sdk": "dev-master",
+        "magento/framework": ">=100.0.0"
+    }
+}

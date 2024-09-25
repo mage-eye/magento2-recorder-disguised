@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+  ~ Copyright Jerke Combee. All rights reserved.
+  ~ https://www.jcombee.nl/
+  -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\Event\ManagerInterface">
+        <plugin name="mage_eye_record_dispatched_event"
+                type="MageEye\MagentoRecorder\Plugin\Record\DispatchedEvent"
+        />
+    </type>
+    <type name="Magento\Framework\AppInterface">
+        <plugin disabled="false" name="GlobalExceptionCatcher" type="JustBetter\Sentry\Plugin\GlobalExceptionCatcher"
+                sortOrder="0"/>
+    </type>
+</config>
